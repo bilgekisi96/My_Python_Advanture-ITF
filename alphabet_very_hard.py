@@ -1,0 +1,30 @@
+def revalph(text):
+    alphabet=list("abcdefghijklmnopqrstuvwxyz")
+    alphabet_big=list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+    rev_alphabet=alphabet[::-1]
+    rev_big_alp=alphabet_big[::-1]
+    dicc=dict(zip(alphabet+alphabet_big+list("123456789"),rev_alphabet+rev_big_alp+list("123456789")))
+    for i in text:
+           if i==" ":
+               dicc[i]=" "
+           print(dicc[i], end="")
+    return
+revalph("Sdkvmlsv45")
+
+
+generate=(i**2 for i in range(10))
+
+print(next(generate)) # for döngüsünün kullandığı function
+print(next(generate))
+print(next(generate))
+print(next(generate))
+
+
+
+
+
+
+
+
+
+
