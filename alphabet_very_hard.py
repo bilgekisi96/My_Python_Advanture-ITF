@@ -12,12 +12,6 @@ def revalph(text):
 revalph("Sdkvmlsv45")
 
 
-generate=(i**2 for i in range(10))
-
-print(next(generate)) # for döngüsünün kullandığı function
-print(next(generate))
-print(next(generate))
-print(next(generate))
 
 
 
