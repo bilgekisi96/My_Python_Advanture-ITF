@@ -1,6 +1,4 @@
 
-
-
 def truncable(number):
     number=str(number)
     right_side=[number[:i] for i in range(1,len(number)+1)]
@@ -21,7 +19,7 @@ def truncable(number):
         if prime == 1 or ("0" in primes):sol = False
         elif any(prime_list):sol=False
     return sag,sol
-right,left=truncable(139)
+right,left=truncable(int(input("enter number:")))
 if (right and left):print("both")
 elif left:print("left")
 elif right:print("right")

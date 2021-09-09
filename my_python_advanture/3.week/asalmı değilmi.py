@@ -1,6 +1,7 @@
-prime_list=[]
+
 prime=int(input("lütfen bir sayi girniz"))
 allnum=[p for p in range(2,prime)]
+prime_list=[]
 for k in allnum:
        if prime%k==0:
            prime_list.append(k)
