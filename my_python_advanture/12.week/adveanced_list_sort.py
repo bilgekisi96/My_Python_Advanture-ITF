@@ -1,10 +1,9 @@
 
 def avdlist(sepet):
-    sepette=list(sorted(sepet))[::-1]
-    dicc={i:[] for i in sepette}
+    dicc={i:[] for i in sepet}
     for j in sepet:dicc[j].append(j)
     return [dicc.values()]
-print(avdlist([5,4,4,5,8,9]))
+print(avdlist(["b", "a", "b", "a", "c"]))
 
 
 
