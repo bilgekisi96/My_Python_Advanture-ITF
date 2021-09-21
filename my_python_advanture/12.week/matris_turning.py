@@ -28,3 +28,22 @@ print(mat_rot([
   [5,  6,  7,  8],
   [9, 10, 11, 12]
 ],-4))
+
+
+def right_rotation(liste, n = 1):
+    donusum = {-1 : 3, -2 : 2, -3 : 1, -4 : 4}
+    if n < 0:n = donusum[n]
+    a = 0
+    while a < n:
+        liste = list(map(lambda *x : [*x[::-1]], *liste))
+        a += 1
+    return liste
+
+print(right_rotation([
+  [1,  2,  3,  4],
+  [5,  6,  7,  8],
+  [9, 10, 11, 12]
+], -1))
+
+
+
